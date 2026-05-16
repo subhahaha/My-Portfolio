@@ -1,0 +1,376 @@
+:root {
+  --green: #8BBd77;
+  --green-bright: #4ade80;
+  --blue: #90a4ef;
+  --blue-light: #91c1eb;
+  --dark: #0f172a;
+  --dark-card: #1e293b;
+  --slate: #334155;
+  --light: #F8FAFC;
+  --muted: #cbd5e1;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--light);
+  color: var(--slate);
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h2 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--green);
+  font-size: 1.4rem;
+  letter-spacing: -0.3px;
+}
+
+.nav-links { display: flex; align-items: center; gap: 8px; }
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: color 0.25s, background 0.25s;
+}
+
+nav a:hover { color: var(--green); background: rgba(139,189,119,0.1); }
+
+/* ── HERO ── */
+.hero {
+  text-align: center;
+  padding: 130px 20px 100px;
+  background: linear-gradient(160deg, #6b8de3 0%, #90a4ef 50%, #a8c4f5 100%);
+  color: white;
+  clip-path: ellipse(160% 100% at 50% 0%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  top: -200px; right: -150px;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 350px; height: 350px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  bottom: 30px; left: -80px;
+  pointer-events: none;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 50px;
+  padding: 5px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.hero-cta {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 11px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background: white;
+  color: #4a6fd4;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+
+.btn-outline {
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+}
+
+.btn-outline:hover { background: rgba(255,255,255,0.15); }
+
+/* ── SECTION SHARED ── */
+.section { padding: 90px 8%; }
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* ── ABOUT ── */
+#about-me {
+  background: white;
+}
+
+.girl-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-accent {
+  background: linear-gradient(135deg, var(--blue-light), var(--blue));
+  border-radius: 24px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--slate);
+  font-style: italic;
+  border-left: 3px solid var(--blue);
+  padding-left: 20px;
+}
+
+/* ── SKILLS ── */
+#skills {
+  background: var(--light);
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-card {
+  background: var(--dark-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  color: white;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+  border-color: var(--green-bright);
+}
+
+.skill-card i { font-size: 2.6rem; display: block; margin-bottom: 14px; }
+.skill-card p { font-weight: 600; font-size: 0.9rem; }
+
+/* ── PROJECTS ── */
+#projects { background: white; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.card {
+  background: var(--dark-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #f1f5f9;
+  padding: 36px 30px;
+  border-radius: 20px;
+  transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); border-color: rgba(139,189,119,0.3); box-shadow: 0 24px 50px rgba(0,0,0,0.35); }
+.card:hover::before { opacity: 1; }
+
+.card-tag {
+  display: inline-block;
+  background: rgba(144,164,239,0.18);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.card p { font-size: 0.93rem; line-height: 1.7; color: var(--muted); }
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.card:hover .card-link { opacity: 1; }
+
+a.card {
+  text-decoration: none;
+  display: block;
+}
+
+/* ── CONTACT ── */
+#contact { background: var(--dark); text-align: center; }
+#contact .section-title { color: white; }
+#contact .section-label { color: var(--green); }
+#contact > p { color: var(--muted); margin-bottom: 36px; font-size: 1rem; }
+
+.contact-icons { display: flex; justify-content: center; gap: 20px; }
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  color: var(--muted);
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.25s, border-color 0.25s, transform 0.25s, background 0.25s;
+}
+
+.contact-icons a:hover {
+  color: white;
+  border-color: var(--green);
+  background: rgba(139,189,119,0.12);
+  transform: translateY(-4px);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #0a1120;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 22px;
+  font-size: 0.82rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .about-inner { grid-template-columns: 1fr; }
+  .about-accent { max-width: 120px; }
+  nav a:not(.nav-home) { display: none; }
+}
+
+/* ── FADE IN ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-tag  { animation: fadeUp 0.5s ease both; }
+.hero h1   { animation: fadeUp 0.6s 0.1s ease both; }
+.hero p    { animation: fadeUp 0.6s 0.2s ease both; }
+.hero-cta  { animation: fadeUp 0.6s 0.3s ease both; }
