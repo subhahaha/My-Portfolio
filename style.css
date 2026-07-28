@@ -180,14 +180,7 @@ nav a:hover { color: var(--green); background: rgba(139,189,119,0.1); }
   justify-content: center;
 }
 
-.about-inner {
-  max-width: 820px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  align-items: center;
-}
+
 
 .about-accent {
   background: linear-gradient(135deg, var(--blue-light), var(--blue));
