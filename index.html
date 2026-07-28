@@ -40,11 +40,11 @@
 <section class="section" id="about-me">
   <div class="about-inner">
 
-    
+    <!-- Girl cartoon SVG — Elegant style, no ears -->
     <div class="girl-wrap">
       <svg id="girl-svg" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px;display:block;margin:0 auto;">
 
-        <!-- Hair back  -->
+        <!-- Hair back (long, covers ear area) -->
         <ellipse cx="100" cy="115" rx="56" ry="72" fill="#0f172a"/>
 
         <!-- Neck -->
@@ -52,21 +52,21 @@
 
         <!-- Body / blouse -->
         <ellipse cx="100" cy="215" rx="52" ry="42" fill="#90a4ef"/>
-        <!--neck collar -->
+        <!-- V-neck collar -->
         <path d="M83 172 L100 194 L117 172" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- Head -->
         <ellipse cx="100" cy="112" rx="46" ry="50" fill="#fce7d6"/>
 
-        <!-- Hair top — -->
+        <!-- Hair top — sleek, covers sides fully (hides ears) -->
         <ellipse cx="100" cy="72" rx="50" ry="28" fill="#0f172a"/>
-        <!-- Side hair panels —  -->
+        <!-- Side hair panels — wide enough to fully cover ears -->
         <ellipse cx="50" cy="112" rx="16" ry="38" fill="#0f172a"/>
         <ellipse cx="150" cy="112" rx="16" ry="38" fill="#0f172a"/>
         <!-- Hair highlight -->
         <ellipse cx="80" cy="67" rx="12" ry="5" fill="#334155" opacity="0.55"/>
 
-        <!-- Eyes — -->
+        <!-- Eyes — almond shaped -->
         <!-- Left eye white -->
         <ellipse cx="82" cy="112" rx="14" ry="10" fill="white"/>
         <!-- Right eye white -->
@@ -82,27 +82,29 @@
         <!-- Right pupil -->
         <circle id="pupil-r" cx="118" cy="112" r="4" fill="#050a14"/>
 
-        <!-- Eye  -->
+        <!-- Eye shine -->
         <circle cx="85" cy="109" r="2" fill="white" opacity="0.9"/>
         <circle cx="121" cy="109" r="2" fill="white" opacity="0.9"/>
 
-        <!--  lashes -->
+        <!-- Elegant lashes -->
         <path d="M68 107 Q82 100 96 107" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
         <path d="M104 107 Q118 100 132 107" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round"/>
 
-        <!-- Eyebrows — -->
+        <!-- Eyebrows — refined arches -->
         <path d="M70 99 Q82 94 94 98" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
         <path d="M106 98 Q118 94 130 99" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round"/>
 
-        <!--  nose -->
+        <!-- Subtle nose -->
         <path d="M97 126 Q100 131 103 126" fill="none" stroke="#c9856a" stroke-width="1.5" stroke-linecap="round"/>
 
-        <!-- smile -->
+        <!-- Gentle smile -->
         <path d="M88 140 Q100 150 112 140" fill="none" stroke="#c0715a" stroke-width="2" stroke-linecap="round"/>
 
-        
+        <!-- Subtle blush -->
+        <ellipse cx="68" cy="126" rx="10" ry="5" fill="#fca5a5" opacity="0.28"/>
+        <ellipse cx="132" cy="126" rx="10" ry="5" fill="#fca5a5" opacity="0.28"/>
 
-        <!-- Earrings -->
+        <!-- Earrings (visible below hair line) -->
         <ellipse cx="54" cy="138" rx="4" ry="6" fill="#90a4ef"/>
         <ellipse cx="146" cy="138" rx="4" ry="6" fill="#90a4ef"/>
 
@@ -110,7 +112,10 @@
         <ellipse cx="52" cy="225" rx="14" ry="30" fill="#90a4ef" transform="rotate(-8,52,225)"/>
         <ellipse cx="148" cy="225" rx="14" ry="30" fill="#90a4ef" transform="rotate(8,148,225)"/>
 
-        
+        <!-- Hands -->
+        <ellipse cx="46" cy="252" rx="11" ry="10" fill="#fce7d6"/>
+        <ellipse cx="154" cy="252" rx="11" ry="10" fill="#fce7d6"/>
+
       </svg>
     </div>
 
@@ -118,9 +123,10 @@
       <div class="section-label">About Me</div>
       <h2 class="section-title">Building things<br>out of curiosity</h2>
       <p>
-        I'm a Computer Engineering student who enjoys building things with code. 
-        I've worked on a few NLP and machine learning projects from sentiment analysis to building chatbots that can understand and respond to natural language.
-        I'm currently looking for internship opportunities where I can keep learning and contribute to real-world AI projects.
+       "I love building things end-to-end.
+        I work across the full MERN stack — React on the frontend, Node.js, Express, and MongoDB on the backend and I enjoy the process of taking an idea from zero to a working, deployed app. 
+        I've built projects ranging from real-time collaboration tools to e-commerce platforms, and I'm always looking to improve how I write clean, maintainable code.
+        Currently seeking a MERN internship where I can contribute to real products and keep growing as a developer."
       </p>
     </div>
   </div>
@@ -162,7 +168,7 @@
 </script>
 
 <!-- SKILLS -->
-<<section id="skills" class="section">
+<section id="skills" class="section">
   <div class="section-label">What I work with</div>
   <h2 class="section-title">Skills</h2>
 
@@ -187,25 +193,9 @@
       <i class="fab fa-html5" style="color:#dc6621;"></i>
       <p>HTML</p>
     </div>
-    <div class="skill-card">
+     <div class="skill-card">
       <i class="fab fa-react" style="color:#61DBFB;"></i>
       <p>React</p>
-    </div>
-    <!-- <div class="skill-card">
-      <i class="fab fa-node-js" style="color:#339933;"></i>
-      <p>Node.js</p>
-    </div>
-    <div class="skill-card">
-      <i class="fab fa-git-alt" style="color:#F05032;"></i>
-      <p>Git</p>
-    </div>
-    <div class="skill-card">
-      <i class="fas fa-wind" style="color:#38BDF8;"></i>
-      <p>Tailwind CSS</p>
-    </div>
-    <div class="skill-card">
-      <i class="fas fa-bolt" style="color:#009688;"></i>
-      <p>FastAPI</p> -->
     </div>
   </div>
 </section>
@@ -215,20 +205,36 @@
   <div class="section-label">What I've built</div>
   <h2 class="section-title">Projects</h2>
 
-  <div class="projects-stack">
+  <div class="projects-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:50px;">
+
     <a class="card" href="https://github.com/subhahaha/Artisan-Marketplace" target="_blank">
-      <span class="card-tag">React Development</span>
-      <h3>Artisan-Marketplace</h3>
-      <p>A multi-vendor e-commerce marketplace where buyers browse and purchase handmade artisan goods, and sellers log in to manage their own product listings and view sales stats. Built with React, TanStack Query, and a REST API backend, with real form validation, stock-aware cart logic, and mobile-responsive design.</p>
+      <h3>Artisan Marketplace</h3>
+      <div class="tech-tags">
+        <span>React</span><span>Vite</span><span>Tailwind CSS</span><span>TanStack Query</span><span>Node.js</span><span>json-server</span>
+      </div>
+      <p>A multi-vendor e-commerce marketplace where buyers browse and purchase handmade artisan goods, and sellers manage their own listings and view sales stats. Features real form validation, stock-aware cart logic, and mobile-responsive design.</p>
       <span class="card-link"><i class="fab fa-github"></i> View on GitHub</span>
     </a>
+
+    <a class="card" href="https://github.com/subhahaha/Collabspace" target="_blank">
+      <h3>CollabSpace</h3>
+      <div class="tech-tags">
+        <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.io</span><span>JWT</span>
+      </div>
+      <p>A full-stack team collaboration app combining a Trello-style Kanban board with real-time chat. Users create workspaces, invite teammates with role-based permissions, drag-and-drop tasks across status columns, and message instantly via Socket.io.</p>
+      <span class="card-link"><i class="fab fa-github"></i> View on GitHub</span>
+    </a>
+
     <a class="card" href="https://github.com/subhahaha/Pet_Recommendation_System" target="_blank">
-      <span class="card-tag">ML · Web Development</span>
       <h3>Pet Recommendation System</h3>
+      <div class="tech-tags">
+        <span>Python</span><span>KNN</span><span>SBERT</span><span>Semantic Search</span>
+      </div>
       <p>A smart pet recommendation system that suggests pets based on user preferences using KNN and enables intelligent pet search through SBERT-based semantic similarity.</p>
       <span class="card-link"><i class="fab fa-github"></i> View on GitHub</span>
     </a>
-    <a class="card" href="https://github.com/subhahaha/Document-Query" target="_blank">
+
+     <!-- <a class="card" href="https://github.com/subhahaha/Document-Query" target="_blank">
       <span class="card-tag">AI/ML</span>
       <h3>Document Query</h3>
       <p>A local, privacy-first RAG(Retrieval-Augmented Generation) chatbot that lets users chat with any PDF using free open-source LLMs — no API costs, no data leaves the device.</p>
@@ -240,9 +246,9 @@
       <p>Developed a sentiment analysis system that processes movie reviews and classifies their sentiment (positive or negative) using Natural Language Processing and a BiLSTM deep learning model.</p>
       <span class="card-link"><i class="fab fa-github"></i> View on GitHub</span>
     </a>
-    
-    
-    
+     -->
+
+
   </div>
 </section>
 
